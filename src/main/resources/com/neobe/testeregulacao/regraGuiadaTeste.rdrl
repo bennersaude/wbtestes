@@ -1,0 +1,11 @@
+package com.neobe.testeregulacao;
+
+import java.lang.Number;
+
+rule "regraGuiadaTeste"
+	dialect "mvel"
+	when
+		$guiaSolicitacao : GuiaSolicitacao( )
+		Beneficiario( idade > 20 ) from $guiaSolicitacao.beneficiario
+	then
+end

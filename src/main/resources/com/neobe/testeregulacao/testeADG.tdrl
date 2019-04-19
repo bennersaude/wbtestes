@@ -1,0 +1,8 @@
+package com.neobe.testeregulacao;
+
+rule "testeADG_0"
+	when 
+		GuiaSolicitacao()
+		Beneficiario()
+then 
+end
